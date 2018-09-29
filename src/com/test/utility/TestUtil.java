@@ -13,7 +13,7 @@ public class TestUtil {
 			ArrayList<Object[]> myData = new ArrayList<Object[]>();
 			
 			try {
-				reader = new Xls_Reader("/Users/naveenkhunteta/Documents/workspace/MorningSessions/src/com/testdata/HalfEbayTestData.xlsx");
+				reader = new Xls_Reader("/Users/Deb/Documents/workspace/MorningSessions/src/com/testdata/HalfEbayTestData.xlsx");
 			} catch (Exception e) {
 				e.printStackTrace();
 			}

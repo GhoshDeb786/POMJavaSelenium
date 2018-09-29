@@ -9,7 +9,7 @@ public class HandleDropBox {
 
 	public static void main(String[] args) {
 		
-		System.setProperty("webdriver.chrome.driver", "/Users/naveenkhunteta/Downloads/chromedriver");	
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\INFOCOM\\Downloads\\chromedriver_win32\\chromedriver.exe");	
 		WebDriver driver = new ChromeDriver(); //launch chrome
 		
 		driver.get("https://scgi.half.ebay.com/ws/eBayISAPI.dll?RegisterEnterInfo&usage=2943&ru=");	//enter url

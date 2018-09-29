@@ -14,7 +14,7 @@ public class TakeScreenshotConcept {
 
 	public static void main(String[] args) throws IOException {
 
-		System.setProperty("webdriver.chrome.driver", "/Users/naveenkhunteta/Downloads/chromedriver");
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\INFOCOM\\Downloads\\chromedriver_win32\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver(); // launch chrome
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
@@ -25,7 +25,7 @@ public class TakeScreenshotConcept {
 		// Take screenshot and store as a file format
 		File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		// now copy the screenshot to desired location using copyFile //method
-		FileUtils.copyFile(src, new File("/Users/naveenkhunteta/Documents/workspace/MorningSessions/src/SeleniumSessions/google.png"));
+		FileUtils.copyFile(src, new File("/Users/Deb/Documents/workspace/MorningSessions/src/SeleniumSessions/google.png"));
 
 	}
 

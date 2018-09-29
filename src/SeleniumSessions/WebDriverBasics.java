@@ -12,12 +12,12 @@ public class WebDriverBasics {
 		//1. FF browser:
 		//geckodriver
 			// C:\\downloads\\geckodriver.exe -- windows 
-	//	System.setProperty("webdriver.gecko.driver", "/Users/naveenkhunteta/Downloads/geckodriver");	
+	//	System.setProperty("webdriver.gecko.driver", "/Users/Deb/Downloads/geckodriver");	
 	  //  WebDriver driver = new FirefoxDriver(); //launch FF
 		
 	    
 	    //2. chrome browser:
-		System.setProperty("webdriver.chrome.driver", "/Users/naveenkhunteta/Downloads/chromedriver");	
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\INFOCOM\\Downloads\\chromedriver_win32\\chromedriver.exe");	
 		WebDriver driver = new ChromeDriver(); //launch chrome
 		driver.get("http://www.google.com");	//enter url
 		

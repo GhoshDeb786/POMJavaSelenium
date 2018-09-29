@@ -12,7 +12,7 @@ public class ParameterizeTest {
 	public static void main(String[] args) {
 
 		//webdriver code:
-		System.setProperty("webdriver.chrome.driver", "/Users/naveenkhunteta/Downloads/chromedriver");
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\INFOCOM\\Downloads\\chromedriver_win32\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver(); // launch chrome
 		driver.get("https://scgi.half.ebay.com/ws/eBayISAPI.dll?RegisterEnterInfo&usage=2943&ru="); // enter url
 		
@@ -20,7 +20,7 @@ public class ParameterizeTest {
 		//Data Driven Approach (Parameterization) -- used to create data driven framework: driving the test data from excel files
 		
 		//get test data from excel:
-		Xls_Reader reader = new Xls_Reader("/Users/naveenkhunteta/Documents/workspace/MorningSessions/src/com/testdata/HalfEbayTestData.xlsx");
+		Xls_Reader reader = new Xls_Reader("/Users/Deb/Documents/workspace/MorningSessions/src/com/testdata/HalfEbayTestData.xlsx");
 		int rowCount = reader.getRowCount("RegTestData");
 		
 		reader.addColumn("RegTestData", "Status");

@@ -21,7 +21,7 @@ public class ReadPropFile {
 		Properties prop = new Properties();
 
 		FileInputStream ip = new FileInputStream(
-				"/Users/naveenkhunteta/Documents/workspace/MorningSessions/src/SeleniumSessions/config.properties");
+				"/Users/Deb/Documents/workspace/MorningSessions/src/SeleniumSessions/config.properties");
 
 		prop.load(ip);
 
@@ -38,15 +38,15 @@ public class ReadPropFile {
 		System.out.println(browserName);
 
 		if (browserName.equals("chrome")) {
-			System.setProperty("webdriver.chrome.driver", "/Users/naveenkhunteta/Downloads/chromedriver");
+			System.setProperty("webdriver.chrome.driver", "C:\\Users\\INFOCOM\\Downloads\\chromedriver_win32\\chromedriver.exe");
 			driver = new ChromeDriver(); // launch chrome
 		} 
 		else if(browserName.equals("FF")){
-			System.setProperty("webdriver.chrome.driver", "/Users/naveenkhunteta/Downloads/geckodriver");
+			System.setProperty("webdriver.chrome.driver", "/Users/Deb/Downloads/geckodriver");
 			driver = new FirefoxDriver();
 		}
 		else if(browserName.equals("IE")){
-			System.setProperty("webdriver.chrome.driver", "/Users/naveenkhunteta/Downloads/internetexplorerdriver");
+			System.setProperty("webdriver.chrome.driver", "/Users/Deb/Downloads/internetexplorerdriver");
 			driver = new InternetExplorerDriver();
 		}
 		

@@ -7,7 +7,7 @@ public class ExcelOperations {
 	public static void main(String[] args) {
 
 		//get test data from excel:
-		Xls_Reader reader = new Xls_Reader("/Users/naveenkhunteta/Documents/workspace/MorningSessions/src/com/testdata/HalfEbayTestData.xlsx");
+		Xls_Reader reader = new Xls_Reader("/Users/Deb/Documents/workspace/MorningSessions/src/com/testdata/HalfEbayTestData.xlsx");
 		
 		
 		if(!reader.isSheetExist("HomePage")){

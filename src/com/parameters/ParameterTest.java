@@ -16,10 +16,10 @@ public class ParameterTest {
 	public void yahooLoginTest(String env, String browser, String url, String emailId) {
 		
 		if (browser.equals("chrome")) {
-			System.setProperty("webdriver.chrome.driver", "/Users/naveenkhunteta/Downloads/chromedriver");
+			System.setProperty("webdriver.chrome.driver", "C:\\Users\\INFOCOM\\Downloads\\chromedriver_win32\\chromedriver.exe");
 			driver = new ChromeDriver();
 		}else if(browser.equals("firefox")){
-			System.setProperty("webdriver.gecko.driver", "/Users/naveenkhunteta/Downloads/geckodriver");
+			System.setProperty("webdriver.gecko.driver", "C:\\Users\\INFOCOM\\Downloads\\geckodriver-v0.18.0-win32\\geckodriver.exe");
 			driver = new FirefoxDriver();
 
 
